@@ -7,14 +7,12 @@
 
 body {
   background-color: #fefefe;
-  display: flex;
-  justify-content: center;
 }
 
 .body {
-  width: 100%;
+  /* width: 100%; */
   display: flex;
-  justify-content: center;
+  justify-content: left;
   height: 100vh;
 }
 
@@ -43,3 +41,64 @@ body {
 .title-wrapper .logo {
   height: 90%;
 }
+
+.main {
+  width:60%;
+  background-color: #f9fafb;
+}
+
+.content-block,
+form {
+  padding-left: 3em;
+}
+
+.main p {
+  font-size: 24px;
+  max-width: 60ch;
+  margin: 1em 0;
+}
+
+.content-block:first-child {
+  margin-top: 100px;
+}
+
+.form-wrapper {
+  background-color: white;
+  box-shadow: 0 4px 8px #AAA;
+  width: 100%;
+  padding: 2em 0;
+}
+
+.form-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: left;
+  width: 60ch;
+  column-gap: 5em;
+}
+
+.form-wrapper h2 {
+  margin-bottom: 1rem;
+}
+
+li {
+  list-style: none;
+  margin-bottom: 1em;
+}
+
+.form-field label {
+  display: block;
+  color: #444;
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+
+.form-field input {
+  width: 200px;
+  background-color: #FAFAFA;
+  border: 1px solid #DDD;
+  border-radius: 3px;
+  font-size: 0.8em;
+  padding: 5px;
+}
+
