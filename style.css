@@ -14,7 +14,6 @@ body {
 }
 
 .body {
-  /* width: 100%; */
   display: flex;
   justify-content: left;
   height: 100vh;
@@ -30,11 +29,10 @@ body {
   background-image: url("img/leaves.jpg");
   background-size: cover;
   height: 100%;
-  /* background-color: aqua; */
 }
 
 .title-wrapper {
-  height: 120px;
+  height: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -44,6 +42,10 @@ body {
 
 .title-wrapper .logo {
   height: 90%;
+}
+
+.title-wrapper h1 {
+  font-size: 48px;
 }
 
 .main {
@@ -63,7 +65,7 @@ form {
 }
 
 .content-block:first-child {
-  margin-top: 100px;
+  margin-top: 150px;
 }
 
 .form-wrapper {
@@ -74,6 +76,10 @@ form {
   margin-bottom: 2em;
 }
 
+.form-wrapper h2 {
+  margin-bottom: 1rem;
+}
+
 .form-list {
   display: flex;
   flex-flow: row wrap;
@@ -82,20 +88,20 @@ form {
   column-gap: 5em;
 }
 
-.form-wrapper h2 {
-  margin-bottom: 1rem;
-}
-
 li {
   list-style: none;
   margin-bottom: 1em;
 }
 
-.form-field label {
-  display: block;
+.form-field label,
+.form-field input {
   color: #444;
-  text-transform: uppercase;
   font-size: 0.8em;
+  display: block;
+}
+
+.form-field label {
+  text-transform: uppercase;
 }
 
 .form-field input {
@@ -103,7 +109,6 @@ li {
   background-color: #FAFAFA;
   border: 1px solid #DDD;
   border-radius: 3px;
-  font-size: 0.8em;
   padding: 5px;
 }
 
@@ -122,9 +127,9 @@ li {
 }
 
 button {
-  /* margin-top: 10px; */
-  background-color: rgb(163,	174, 150)	;
+  background-color: #384D2B;
   font-size: 1.2rem;
+  color: #F6FFEA;
   padding: 1rem 3rem;
   border: none;
   border-radius: 10px;
@@ -133,11 +138,11 @@ button {
 
 button:hover,
 button:focus {
-  background-color: rgb(170, 180, 160);
+  background-color: #52713F;
 }
 
 button:active {
-  background-color: rgb(150, 160, 130);
+  background-color: #304225;
   box-shadow: none;
 }
 
